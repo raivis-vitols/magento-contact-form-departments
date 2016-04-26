@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactDepartments
+ * @copyright   Copyright 2016 ArchApps (https://archapps.io)
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+-->
+<config>
+    <sections>
+        <contacts>
+            <groups>
+                <departments translate="label" module="archapps_contactdepartments">
+                    <label>Departments</label>
+                    <sort_order>200</sort_order>
+                    <show_in_store>1</show_in_store>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <frontend_type>text</frontend_type>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enable Departments</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Whether Departments Feature Is Enabled For Contact Form</comment>
+                        </enabled>
+
+                        <departments translate="label">
+                            <label>Departments</label>
+                            <sort_order>20</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <frontend_model>archapps_contactdepartments/adminhtml_department</frontend_model>
+                        </departments>
+
+                        <field_label translate="label comment">
+                            <label>Field Label</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <comment>Label / Title To Be Displayed Next To Department Field</comment>
+                        </field_label>
+
+                        <show_placeholder_option translate="label comment">
+                            <label>Show Placeholder Option</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Whether To Show Placeholder Option in Departments Select</comment>
+                        </show_placeholder_option>
+
+                        <placeholder_option_text translate="label comment">
+                            <label>Placeholder Option Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <comment>Text To Show In Placeholder Option In Departments Select</comment>
+                        </placeholder_option_text>
+                    </fields>
+                </departments>
+            </groups>
+        </contacts>
+    </sections>
+</config>

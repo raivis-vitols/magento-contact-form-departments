@@ -1,0 +1,5 @@
+src/app/code/community/ArchApps/ContactDepartments/ app/code/community/ArchApps/ContactDepartments/
+src/app/etc/modules/ArchApps_ContactDepartments.xml app/etc/modules/ArchApps_ContactDepartments.xml
+src/app/locale/en_US/ArchApps_ContactDepartments.csv app/locale/en_US/ArchApps_ContactDepartments.csv
+src/app/design/frontend/base/default/layout/archapps/contactdepartments.xml app/design/frontend/base/default/layout/archapps/contactdepartments.xml
+src/app/design/frontend/base/default/template/archapps/contactdepartments/ app/design/frontend/base/default/template/archapps/contactdepartments/
