@@ -1,5 +1,5 @@
-src/app/code/community/ArchApps/ContactDepartments/ app/code/community/ArchApps/ContactDepartments/
-src/app/etc/modules/ArchApps_ContactDepartments.xml app/etc/modules/ArchApps_ContactDepartments.xml
-src/app/locale/en_US/ArchApps_ContactDepartments.csv app/locale/en_US/ArchApps_ContactDepartments.csv
-src/app/design/frontend/base/default/layout/archapps/contactdepartments.xml app/design/frontend/base/default/layout/archapps/contactdepartments.xml
-src/app/design/frontend/base/default/template/archapps/contactdepartments/ app/design/frontend/base/default/template/archapps/contactdepartments/
+src/app/code/community/ArchApps/ContactFormDepartments/ app/code/community/ArchApps/ContactFormDepartments/
+src/app/etc/modules/ArchApps_ContactFormDepartments.xml app/etc/modules/ArchApps_ContactFormDepartments.xml
+src/app/locale/en_US/ArchApps_ContactFormDepartments.csv app/locale/en_US/ArchApps_ContactFormDepartments.csv
+src/app/design/frontend/base/default/layout/archapps/contactformdepartments.xml app/design/frontend/base/default/layout/archapps/contactformdepartments.xml
+src/app/design/frontend/base/default/template/archapps/contactformdepartments/ app/design/frontend/base/default/template/archapps/contactformdepartments/

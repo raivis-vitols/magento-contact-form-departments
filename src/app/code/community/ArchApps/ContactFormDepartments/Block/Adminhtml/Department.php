@@ -1,12 +1,12 @@
 <?php
 /**
  * @category    ArchApps
- * @package     ArchApps_ContactDepartments
+ * @package     ArchApps_ContactFormDepartments
  * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 
-class ArchApps_ContactDepartments_Block_Adminhtml_Department
+class ArchApps_ContactFormDepartments_Block_Adminhtml_Department
     extends Mage_Adminhtml_Block_System_Config_Form_Field_Array_Abstract
 {
     /**
@@ -14,8 +14,8 @@ class ArchApps_ContactDepartments_Block_Adminhtml_Department
      */
     public function __construct()
     {
-        /** @var ArchApps_ContactDepartments_Helper_Data $helper */
-        $helper = Mage::helper('archapps_contactdepartments');
+        /** @var ArchApps_ContactFormDepartments_Helper_Data $helper */
+        $helper = Mage::helper('archapps_contactformdepartments');
 
         $this->addColumn('name', array(
             'style' => 'width:200px',

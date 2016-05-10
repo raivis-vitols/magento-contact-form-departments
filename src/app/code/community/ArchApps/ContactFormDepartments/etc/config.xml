@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactFormDepartments
+ * @copyright   Copyright 2016 ArchApps (https://archapps.io)
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+-->
+<config>
+    <modules>
+        <ArchApps_ContactFormDepartments>
+            <version>0.1.2</version>
+        </ArchApps_ContactFormDepartments>
+    </modules>
+
+    <global>
+        <blocks>
+            <archapps_contactformdepartments>
+                <class>ArchApps_ContactFormDepartments_Block</class>
+            </archapps_contactformdepartments>
+        </blocks>
+
+        <helpers>
+            <archapps_contactformdepartments>
+                <class>ArchApps_ContactFormDepartments_Helper</class>
+            </archapps_contactformdepartments>
+        </helpers>
+
+        <models>
+            <archapps_contactformdepartments>
+                <class>ArchApps_ContactFormDepartments_Model</class>
+            </archapps_contactformdepartments>
+        </models>
+    </global>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <archapps_contactformdepartments>
+                    <files>
+                        <default>ArchApps_ContactFormDepartments.csv</default>
+                    </files>
+                </archapps_contactformdepartments>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <layout>
+            <updates>
+                <archapps_contactformdepartments>
+                    <file>archapps/contactformdepartments.xml</file>
+                </archapps_contactformdepartments>
+            </updates>
+        </layout>
+
+        <events>
+            <controller_action_predispatch_contacts_index_post>
+                <observers>
+                    <archapps_contactformdepartments>
+                        <type>singleton</type>
+                        <method>setDepartmentRecipient</method>
+                        <class>archapps_contactformdepartments/observer</class>
+                    </archapps_contactformdepartments>
+                </observers>
+            </controller_action_predispatch_contacts_index_post>
+        </events>
+    </frontend>
+
+    <default>
+        <contacts>
+            <departments>
+                <select_label>Department</select_label>
+                <show_placeholder_option>1</show_placeholder_option>
+                <placeholder_option_text>-- Select Department --</placeholder_option_text>
+            </departments>
+        </contacts>
+    </default>
+</config>

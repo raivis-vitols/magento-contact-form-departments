@@ -2,7 +2,7 @@
 <!--
 /**
  * @category    ArchApps
- * @package     ArchApps_ContactDepartments
+ * @package     ArchApps_ContactFormDepartments
  * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
@@ -11,7 +11,7 @@
     <sections>
         <contacts>
             <groups>
-                <departments translate="label" module="archapps_contactdepartments">
+                <departments translate="label" module="archapps_contactformdepartments">
                     <label>Departments</label>
                     <sort_order>200</sort_order>
                     <show_in_store>1</show_in_store>
@@ -37,18 +37,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_default>1</show_in_default>
                             <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
-                            <frontend_model>archapps_contactdepartments/adminhtml_department</frontend_model>
+                            <frontend_model>archapps_contactformdepartments/adminhtml_department</frontend_model>
                         </departments>
 
-                        <field_label translate="label comment">
-                            <label>Field Label</label>
+                        <select_label translate="label comment">
+                            <label>Select Label</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
                             <show_in_default>1</show_in_default>
-                            <comment>Label / Title To Be Displayed Next To Department Field</comment>
-                        </field_label>
+                            <comment>Label / Title To Be Displayed Next To Department Select</comment>
+                        </select_label>
 
                         <show_placeholder_option translate="label comment">
                             <label>Show Placeholder Option</label>

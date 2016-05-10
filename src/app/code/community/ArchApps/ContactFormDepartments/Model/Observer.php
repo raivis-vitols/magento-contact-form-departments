@@ -1,12 +1,12 @@
 <?php
 /**
  * @category    ArchApps
- * @package     ArchApps_ContactDepartments
+ * @package     ArchApps_ContactFormDepartments
  * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 
-class ArchApps_ContactDepartments_Model_Observer
+class ArchApps_ContactFormDepartments_Model_Observer
 {
     /**
      * Set contact form recipient email to one specified in the department
@@ -15,10 +15,10 @@ class ArchApps_ContactDepartments_Model_Observer
      */
     public function setDepartmentRecipient(Varien_Event_Observer $observer)
     {
-        /** @var ArchApps_ContactDepartments_Helper_Data $helper */
-        $helper = Mage::helper('archapps_contactdepartments');
+        /** @var ArchApps_ContactFormDepartments_Helper_Data $helper */
+        $helper = Mage::helper('archapps_contactformdepartments');
 
-        if (!$helper->getIsEnabled()) {
+        if (!$helper->isEnabled()) {
             return;
         }
 

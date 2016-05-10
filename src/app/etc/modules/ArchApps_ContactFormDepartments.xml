@@ -2,19 +2,19 @@
 <!--
 /**
  * @category    ArchApps
- * @package     ArchApps_ContactDepartments
+ * @package     ArchApps_ContactFormDepartments
  * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 -->
 <config>
     <modules>
-        <ArchApps_ContactDepartments>
+        <ArchApps_ContactFormDepartments>
             <active>true</active>
             <codePool>community</codePool>
             <depends>
                 <Mage_Contacts />
             </depends>
-        </ArchApps_ContactDepartments>
+        </ArchApps_ContactFormDepartments>
     </modules>
 </config>

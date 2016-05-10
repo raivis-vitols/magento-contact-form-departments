@@ -1,24 +1,24 @@
 <?php
 /**
  * @category    ArchApps
- * @package     ArchApps_ContactDepartments
+ * @package     ArchApps_ContactFormDepartments
  * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 ?>
 <?php
-    /** @var ArchApps_ContactDepartments_Helper_Data $helper */
-    $helper = Mage::helper('archapps_contactdepartments');
+    /** @var ArchApps_ContactFormDepartments_Helper_Data $helper */
+    $helper = Mage::helper('archapps_contactformdepartments');
 ?>
-<?php if ($helper->getIsEnabled() && ($departments = $helper->getDepartments())): ?>
+<?php if ($helper->isEnabled() && ($departments = $helper->getDepartments())): ?>
     <li>
-        <?php if ($label = $helper->getFieldLabel()): ?>
+        <?php if ($label = $helper->getSelectLabel()): ?>
             <label for="department" class="required"><em>*</em><?php echo $label ?></label>
         <?php endif; ?>
 
         <div class="input-box">
             <select name="department" id="department" class="required-entry"
-                    title="<?php echo Mage::helper('core')->quoteEscape($helper->getFieldLabel()) ?>">
+                    title="<?php echo Mage::helper('core')->quoteEscape($helper->getSelectLabel()) ?>">
                 <?php if ($helper->getShowPlaceholderOption()): ?>
                     <option value=""><?php echo $helper->getPlaceholderOptionText() ?></option>
                 <?php endif; ?>

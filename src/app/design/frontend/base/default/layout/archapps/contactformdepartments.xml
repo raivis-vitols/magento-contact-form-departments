@@ -2,7 +2,7 @@
 <!--
 /**
  * @category    ArchApps
- * @package     ArchApps_ContactDepartments
+ * @package     ArchApps_ContactFormDepartments
  * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
@@ -10,10 +10,10 @@
 <layout>
     <contacts_index_index>
         <reference name="contactForm">
-            <!-- Append departments field block to contact form -->
+            <!-- Append departments select block to contact form -->
             <block type="core/template" as="departments"
-                   name="archapps.contactdepartments.departments"
-                   template="archapps/contactdepartments/departments.phtml"/>
+                   name="archapps.contactformdepartments.departments"
+                   template="archapps/contactformdepartments/departments.phtml"/>
         </reference>
     </contacts_index_index>
 </layout>
