@@ -2,7 +2,6 @@
 /**
  * @category    ArchApps
  * @package     ArchApps_ContactFormDepartments
- * @copyright   Copyright 2016 ArchApps (https://archapps.io)
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 
