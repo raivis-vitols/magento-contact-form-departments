@@ -35,4 +35,6 @@ To avoid any template conflicts and broken contact forms for existing Magento st
 
 Navigate to "System -> Configuration -> General -> Contacts" and open "Departments" section. Add your departments in "Departments" field by clicking "Add Department" button and set "Enable Departments" configuration field value to "Yes". Adjust the rest of config fields according to your needs. From now on, contact emails will be sent to specified department’s email address.
 
+To add department email to contacts email template, use `{{var data.departmentEmail}}` template variable - it will output the department email customer had selected in contacts form.
+
 ![Screenshot](http://i.imgur.com/XDrp8HQ.jpg)

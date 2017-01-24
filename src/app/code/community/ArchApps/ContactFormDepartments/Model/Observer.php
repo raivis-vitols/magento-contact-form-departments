@@ -30,6 +30,9 @@ class ArchApps_ContactFormDepartments_Model_Observer
         }
 
         if ($recipient = $helper->getDepartmentEmail($key)) {
+            // Add recipient email to post so that it is available in template
+            $controller->getRequest()->setPost('departmentEmail', $recipient);
+
             $path = Mage_Contacts_IndexController::XML_PATH_EMAIL_RECIPIENT;
             // Set new department email address to specified config node
             Mage::app()->getStore()->setConfig($path, $recipient);
