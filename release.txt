@@ -1,4 +1,30 @@
 ********************************************************************************
+# 0.1.3
+
+# Details
+Department email now available in contacts email template.
+
+# Changes
+- Department email now available in contacts email template.
+
+# Fixes
+- N/A
+
+
+********************************************************************************
+# 0.1.2
+
+# Details
+N/A
+
+# Changes
+- N/A
+
+# Fixes
+- N/A
+
+
+********************************************************************************
 # 0.1.1
 
 # Details
