@@ -38,3 +38,4 @@ Navigate to "System -> Configuration -> General -> Contacts" and open "Departmen
 To add department email to contacts email template, use `{{var data.departmentEmail}}` template variable - it will output the department email customer had selected in contacts form.
 
 ![Screenshot](http://i.imgur.com/XDrp8HQ.jpg)
+Extension developed by [Raivis Vitols](https://raivis.com/).
