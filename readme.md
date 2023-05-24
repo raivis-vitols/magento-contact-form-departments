@@ -1,7 +1,5 @@
 # Contact Form Departments Extension for Magento
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/raivis-vitols/magento-contact-form-departments/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/raivis-vitols/magento-contact-form-departments/?branch=master)
-
 Contact Form Departments extension for Magento extends default contact form by adding departments field that helps you sort all incoming contact emails. Easily add any number of contact departments - specify department name, email address to receive emails and set display order within select field for each department. From now on, contact emails will be sent to specified department email address.
 
 ![Screenshot](http://i.imgur.com/jYm010D.jpg)
